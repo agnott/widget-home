@@ -1,0 +1,30 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+.col{
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  width: 25%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px){
+  .col{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .col{
+    width: 100%;
+  }
+}

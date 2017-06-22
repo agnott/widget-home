@@ -1,0 +1,23 @@
+.news{
+  position: relative;
+}
+
+.news .headline {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  box-sizing: border-box;
+  background-color: rgb(255, 169, 0);
+}
+
+.news .headline:hover{
+  background-color: rgba(255, 160, 0, 0.8);
+}
+
+.news .headline:not(:first-child){
+  border-top: 2px solid white;
+}

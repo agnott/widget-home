@@ -1,0 +1,70 @@
+.reddit{
+  position: relative;
+}
+
+.reddit .sub-input{
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: white;
+  box-sizing: border-box;
+  background-color: rgb(0, 223, 215);
+  text-align: center;
+}
+
+.reddit .sub-input input{
+  box-sizing: border-box;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+.reddit .sub-input .go-button{
+  display: inline-block;
+  background-color: white;
+  color: rgb(0, 223, 215);
+  padding: 4px 10px;
+  border: 1px solid gray;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.reddit .item {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  box-sizing: border-box;
+  background-color: rgb(0, 223, 215);
+  text-align: center;
+}
+
+.reddit .item .title{
+  display: inline-block;
+  background-color: rgba(0, 223, 215, 1.0);
+  padding: 5px 10px;
+}
+.reddit .item:hover .title{
+  background-color: rgba(0, 223, 215, 0.75);
+}
+
+.reddit .item .image-strip{
+  position: absolute;
+  top: 0px; left: 0px;
+  height: 100%; width: 100%;
+  background-size: cover !important;
+  z-index: -1;
+}
+
+.reddit .item:hover{
+  background-color: rgba(0, 223, 215, 0.0);
+  padding: 50px 20px;
+}
+
+
+.reddit .item:not(:first-child){
+  border-top: 2px solid white;
+}

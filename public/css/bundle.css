@@ -1,0 +1,146 @@
+.clock{
+  padding: 10px;
+  background-color: rgb(0,223,215);
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.gif{
+  position: relative;
+  padding: 15px;
+  background-color: rgba(254, 0, 6, 1.0);
+  text-align: center;
+  cursor: pointer;
+}
+
+.gif img{
+  display: inline-block;
+  width: 100%;
+}
+.news{
+  position: relative;
+}
+
+.news .headline {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  box-sizing: border-box;
+  background-color: rgb(255, 169, 0);
+}
+
+.news .headline:hover{
+  background-color: rgba(255, 160, 0, 0.8);
+}
+
+.news .headline:not(:first-child){
+  border-top: 2px solid white;
+}
+.recipe{
+  position: relative;
+  padding: 15px;
+  background-color: rgba(254, 0, 6, 1.0);
+  text-align: center;
+}
+
+.recipe a{
+  display: block;
+}
+
+.recipe img{
+  display: inline-block;
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+  text-align: center;
+}
+.recipe .name{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding-top: 15px;
+}
+.reddit{
+  position: relative;
+}
+
+.reddit .sub-input{
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: white;
+  box-sizing: border-box;
+  background-color: rgb(0, 223, 215);
+  text-align: center;
+}
+
+.reddit .sub-input input{
+  box-sizing: border-box;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+.reddit .sub-input .go-button{
+  display: inline-block;
+  background-color: white;
+  color: rgb(0, 223, 215);
+  padding: 4px 10px;
+  border: 1px solid gray;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.reddit .item {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  box-sizing: border-box;
+  background-color: rgb(0, 223, 215);
+  text-align: center;
+}
+
+.reddit .item .title{
+  display: inline-block;
+  background-color: rgba(0, 223, 215, 1.0);
+  padding: 5px 10px;
+}
+.reddit .item:hover .title{
+  background-color: rgba(0, 223, 215, 0.75);
+}
+
+.reddit .item .image-strip{
+  position: absolute;
+  top: 0px; left: 0px;
+  height: 100%; width: 100%;
+  background-size: cover !important;
+  z-index: -1;
+}
+
+.reddit .item:hover{
+  background-color: rgba(0, 223, 215, 0.0);
+  padding: 50px 20px;
+}
+
+
+.reddit .item:not(:first-child){
+  border-top: 2px solid white;
+}
+.widget{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid white;
+}

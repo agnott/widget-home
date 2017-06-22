@@ -1,0 +1,7 @@
+.widget{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid white;
+}

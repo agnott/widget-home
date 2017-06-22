@@ -1,0 +1,33 @@
+{
+  "name": "widget-home",
+  "version": "1.0.0",
+  "description": "Dashboard with widgets.",
+  "main": "index.js",
+  "scripts": {
+    "start": "browserify -t [ babelify --presets [react] ] ./src/index.jsx -o ./public/js/bundle.js; find src/ -name '*.css' -exec cat {} \\; > ./public/css/bundle.css; node index.js;",
+    "js": "browserify -t [ babelify --presets [react] ] ./src/index.jsx -o ./public/js/bundle.js;",
+    "css": "find src/ -name '*.css' -exec cat {} \\; > ./public/css/bundle.css;",
+    "server": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agnott/widget-home.git"
+  },
+  "author": "Andrew Gnott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agnott/widget-home/issues"
+  },
+  "homepage": "https://github.com/agnott/widget-home#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "cheerio": "^1.0.0-rc.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "request": "^2.81.0",
+    "socket.io": "^2.0.3"
+  }
+}
